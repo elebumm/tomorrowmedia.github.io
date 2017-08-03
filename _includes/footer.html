@@ -1,0 +1,69 @@
+<footer class="footer">
+    <div class="footer-top">
+        <div class="row flex">
+            <div class="column width-3">
+                <div class="widget">
+                    <div class="footer-logo mb-30">
+                        <a href="index-two-columns.html"><img src="/assets/images/footer-logo.png" alt="Balzac Logo" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column width-3">
+                <div class="widget">
+                    <h4 class="widget-title">Menu</h4>
+                    <ul class="list-group small">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Get In Touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column width-3">
+                <div class="widget">
+                    <h4 class="widget-title">Latest Projects</h4>
+                    <ul class="list-group small">
+                        {% for project in site.projects limit:4 %}
+                        <li>
+                            <a href="#">{{project.project_name}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="column width-3">
+                <div class="widget">
+                    <h4 class="widget-title">Visit Us</h4>
+                    <p class="mb-20">145 Christina Street North,<br>Sarnia Ontario,<br>N7T 5T8, Canada.</p>
+                    <ul class="social-list list-horizontal">
+                        <li><a href="https://twitter.com/tomorrowmedia_"><span class="icon-twitter small"></span></a></li>
+                        <li><a href="https://facebook.com/tomorrowmediamarketing"><span class="icon-facebook small"></span></a></li>
+                        <li><a href="https://youtube.com/tomorrowmedia_"><span class="icon-youtube small"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="row">
+            <div class="column width-12">
+                <div class="footer-bottom-inner center">
+                    <p class="copyright pull-left clear-float-on-mobile">
+                        &copy; TMRRW inc. All Rights Reserved.
+                    </p>
+                    <p class="pull-right clear-float-on-mobile">
+                        <a href="#" class="scroll-to-top" data-no-hide>Back Top</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
